@@ -13,5 +13,6 @@ class App(customtkinter.CTk):
         self.geometry(f"{self.APP_WIDTH}x{self.APP_HEIGHT}+{0}+{0}")
         # задаємо назву вікну додатку
         self.title("Головне вікно додатку")
+        self.resizable(False, False)
 # створюємо об'єкт від класу App
 app = App(app_width= 400, app_height = 300)
