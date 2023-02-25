@@ -15,4 +15,4 @@ class App(customtkinter.CTk):
         self.title("Головне вікно додатку")
         self.resizable(False, False)
 # створюємо об'єкт від класу App
-app = App(app_width= 400, app_height = 300)
+app = App(app_width= 500, app_height = 500)
