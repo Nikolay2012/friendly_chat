@@ -19,7 +19,7 @@ def write_text():
     m_input.input_data.delete(0, ctk.END)
 
 button_input = ctk.CTkButton(
-    master= m_app.app,
+    master= m_app.app.INPUT_FRAME,
     width= button_width,
     height= button_height,
     fg_color= "darkorange",
@@ -28,7 +28,7 @@ button_input = ctk.CTkButton(
     command= write_text
 )
 button_input.place(
-    x = m_app.app.APP_WIDTH // 2 + m_input.input_width // 1.5, 
-    y = m_app.app.APP_HEIGHT - m_input.input_height // 2 * 1.5, 
+    x = m_app.app.INPUT_FRAME._current_width // 2 + m_input.input_width // 1.5 - 65, 
+    y = m_app.app.INPUT_FRAME._current_height // 2, 
     anchor = ctk.CENTER
 )
